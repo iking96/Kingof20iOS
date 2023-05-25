@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B462462294721D800323D90 /* PreviewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B462461294721D800323D90 /* PreviewHelpers.swift */; };
+		7B46246529497A6C00323D90 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B46246429497A6C00323D90 /* GameConstants.swift */; };
+		7B4624682A1D76D200323D90 /* RackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4624672A1D76D200323D90 /* RackView.swift */; };
 		7B909C7229370B640073C898 /* Kingof20_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B909C7129370B640073C898 /* Kingof20_iOSApp.swift */; };
 		7B909C7429370B640073C898 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B909C7329370B640073C898 /* GameView.swift */; };
 		7B909C7629370B650073C898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B909C7529370B650073C898 /* Assets.xcassets */; };
@@ -14,6 +17,13 @@
 		7B909C8429370B650073C898 /* Kingof20_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B909C8329370B650073C898 /* Kingof20_iOSTests.swift */; };
 		7B909C8E29370B650073C898 /* Kingof20_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B909C8D29370B650073C898 /* Kingof20_iOSUITests.swift */; };
 		7B909C9029370B650073C898 /* Kingof20_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B909C8F29370B650073C898 /* Kingof20_iOSUITestsLaunchTests.swift */; };
+		7BE94F3D2937387A00127449 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94F3C2937387A00127449 /* BoardView.swift */; };
+		7BE94F4029373B3600127449 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94F3F29373B3600127449 /* Tile.swift */; };
+		7BE94F4229373CB200127449 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94F4129373CB200127449 /* TileView.swift */; };
+		7BE94F44293878F500127449 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94F43293878F500127449 /* Board.swift */; };
+		7BE94F4A293F04BD00127449 /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94F49293F04BD00127449 /* SpaceView.swift */; };
+		7BE94F4D293F067600127449 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94F4C293F067600127449 /* RowView.swift */; };
+		7BE94F4F293F102F00127449 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94F4E293F102F00127449 /* Space.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B462461294721D800323D90 /* PreviewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewHelpers.swift; sourceTree = "<group>"; };
+		7B46246429497A6C00323D90 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		7B4624672A1D76D200323D90 /* RackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackView.swift; sourceTree = "<group>"; };
 		7B909C6E29370B640073C898 /* Kingof20-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kingof20-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B909C7129370B640073C898 /* Kingof20_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingof20_iOSApp.swift; sourceTree = "<group>"; };
 		7B909C7329370B640073C898 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -45,6 +58,13 @@
 		7B909C8929370B650073C898 /* Kingof20-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kingof20-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B909C8D29370B650073C898 /* Kingof20_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingof20_iOSUITests.swift; sourceTree = "<group>"; };
 		7B909C8F29370B650073C898 /* Kingof20_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingof20_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BE94F3C2937387A00127449 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		7BE94F3F29373B3600127449 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		7BE94F4129373CB200127449 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		7BE94F43293878F500127449 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		7BE94F49293F04BD00127449 /* SpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
+		7BE94F4C293F067600127449 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		7BE94F4E293F102F00127449 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B46246329497A5E00323D90 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7B46246429497A6C00323D90 /* GameConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7B4624662A1D76A500323D90 /* Rack */ = {
+			isa = PBXGroup;
+			children = (
+				7BE94F4129373CB200127449 /* TileView.swift */,
+				7B4624672A1D76D200323D90 /* RackView.swift */,
+			);
+			path = Rack;
+			sourceTree = "<group>";
+		};
 		7B909C6529370B640073C898 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +132,14 @@
 		7B909C7029370B640073C898 /* Kingof20-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7B46246329497A5E00323D90 /* Constants */,
+				7BE94F3E29373A7D00127449 /* Models */,
+				7BE94F372937339000127449 /* Views */,
 				7B909C7129370B640073C898 /* Kingof20_iOSApp.swift */,
-				7B909C7329370B640073C898 /* GameView.swift */,
 				7B909C7529370B650073C898 /* Assets.xcassets */,
 				7B909C7729370B650073C898 /* Kingof20_iOS.entitlements */,
 				7B909C7829370B650073C898 /* Preview Content */,
+				7B462461294721D800323D90 /* PreviewHelpers.swift */,
 			);
 			path = "Kingof20-iOS";
 			sourceTree = "<group>";
@@ -127,6 +167,36 @@
 				7B909C8F29370B650073C898 /* Kingof20_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Kingof20-iOSUITests";
+			sourceTree = "<group>";
+		};
+		7BE94F372937339000127449 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B4624662A1D76A500323D90 /* Rack */,
+				7BE94F4B293F066400127449 /* Board */,
+				7B909C7329370B640073C898 /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BE94F3E29373A7D00127449 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BE94F3F29373B3600127449 /* Tile.swift */,
+				7BE94F43293878F500127449 /* Board.swift */,
+				7BE94F4E293F102F00127449 /* Space.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BE94F4B293F066400127449 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				7BE94F3C2937387A00127449 /* BoardView.swift */,
+				7BE94F49293F04BD00127449 /* SpaceView.swift */,
+				7BE94F4C293F067600127449 /* RowView.swift */,
+			);
+			path = Board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +329,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE94F4A293F04BD00127449 /* SpaceView.swift in Sources */,
+				7B4624682A1D76D200323D90 /* RackView.swift in Sources */,
+				7BE94F44293878F500127449 /* Board.swift in Sources */,
+				7B462462294721D800323D90 /* PreviewHelpers.swift in Sources */,
 				7B909C7429370B640073C898 /* GameView.swift in Sources */,
+				7BE94F4D293F067600127449 /* RowView.swift in Sources */,
+				7BE94F4029373B3600127449 /* Tile.swift in Sources */,
 				7B909C7229370B640073C898 /* Kingof20_iOSApp.swift in Sources */,
+				7B46246529497A6C00323D90 /* GameConstants.swift in Sources */,
+				7BE94F4229373CB200127449 /* TileView.swift in Sources */,
+				7BE94F3D2937387A00127449 /* BoardView.swift in Sources */,
+				7BE94F4F293F102F00127449 /* Space.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,10 @@ import SwiftUI
 struct Kingof20_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            GameView()
+            GameView(
+                board: Board(boardMatrix: PreviewHelpers.EmptyBoard()),
+                rackedTiles: PreviewHelpers.FullRack()
+            )
         }
     }
 }
