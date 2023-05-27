@@ -1,2 +1,3 @@
 # ignore all *xcuserdata* files
 **/xcuserdata
+*.swp
