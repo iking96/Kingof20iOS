@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct BoardView: View {
-    var board: Board
-    
+    @EnvironmentObject var store: GameStore
+        
     var body: some View {
         Grid(horizontalSpacing: 0, verticalSpacing: 0) {
-            ForEach(0..<board.boardMatrix.endIndex, id: \.self) { rowIndex in
-                let boardMatrixRow = board.boardMatrix[rowIndex]
+            ForEach(0..<store.state.board.boardMatrix.endIndex, id: \.self) { rowIndex in
+                let boardMatrixRow = store.state.board.boardMatrix[rowIndex]
                 
                 GridRow {
                     ForEach(boardMatrixRow) { space in
@@ -27,8 +27,8 @@ struct BoardView: View {
 
 struct Board_Previews: PreviewProvider {
     static var previews: some View {
-        BoardView(
-            board: Board(boardMatrix: PreviewHelpers.EmptyBoard())
-        )
+        StoreProvider(store: .default) {
+            BoardView()
+        }
     }
 }

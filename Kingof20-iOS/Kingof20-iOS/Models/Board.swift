@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Board : Identifiable, Equatable {
+struct Board : Identifiable, Equatable, Codable {
     var id = UUID()
     var boardMatrix : [[Space]]
 }

@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Space: Identifiable, Equatable {
-    var id = UUID();
+public struct Space: Identifiable, Equatable, Codable {
+    public var id = UUID();
     
     let row: Int
     let column: Int
