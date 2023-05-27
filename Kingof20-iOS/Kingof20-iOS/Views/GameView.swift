@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct GameView: View {
-    var board: Board
     var rackedTiles: [Tile]
 
     var body: some View {
@@ -17,7 +16,7 @@ struct GameView: View {
             .overlay(
                 VStack {
                     Spacer()
-                    BoardView(board: board)
+                    BoardView()
                     RackView(tiles: rackedTiles)
                     Spacer()
                 }
@@ -30,9 +29,10 @@ struct GameView: View {
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView(
-            board: Board(boardMatrix: PreviewHelpers.EmptyBoard()),
-            rackedTiles: PreviewHelpers.FullRack()
-        )
+        StoreProvider(store: .default) {
+            GameView(
+                rackedTiles: PreviewHelpers.FullRack()
+            )
+        }
     }
 }

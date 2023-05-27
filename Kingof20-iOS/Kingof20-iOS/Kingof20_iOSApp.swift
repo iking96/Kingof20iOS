@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct Kingof20_iOSApp: App {
+    let store = GameStore.default
+    
     var body: some Scene {
         WindowGroup {
             GameView(
-                board: Board(boardMatrix: PreviewHelpers.EmptyBoard()),
                 rackedTiles: PreviewHelpers.FullRack()
-            )
+            ).environmentObject(store)
         }
     }
 }

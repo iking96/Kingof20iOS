@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum TileValue: Int {
+enum TileValue: Int, Codable {
     case one = 1
     case two
     case three
@@ -23,7 +23,7 @@ enum TileValue: Int {
     case over
 }
 
-struct Tile : Identifiable, Equatable {
+struct Tile : Identifiable, Equatable, Codable {
     var id = UUID()
     var value : TileValue
     
