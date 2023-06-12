@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Space: Identifiable, Equatable, Codable {
+public struct Space: Identifiable, Equatable, Codable, DropReceiver {    
     public var id = UUID();
     
     let row: Int
@@ -22,4 +22,6 @@ public struct Space: Identifiable, Equatable, Codable {
             (row == 3 && column == 3)
         )
     }
+    
+    public var dropArea: CGRect? = nil
 }

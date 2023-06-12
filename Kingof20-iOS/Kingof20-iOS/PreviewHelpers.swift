@@ -11,9 +11,9 @@ class PreviewHelpers {
     class func EmptyBoard() -> [[Space]] {
         var array = [[Space]]()
         
-        for column in 0...GAME_CONSTANTS.BoardSize {
+        for row in 0...GAME_CONSTANTS.BoardSize {
             var columnArray = Array<Space>()
-            for row in 0...GAME_CONSTANTS.BoardSize {
+            for column in 0...GAME_CONSTANTS.BoardSize {
                 columnArray.append(Space(row: row, column: column))
             }
             array.append(columnArray)

@@ -9,10 +9,12 @@ import Foundation
 
 public enum RackAction {
     public struct Place: GameAction {
-        let space: Space
+        let position: CGPoint
+        let tile: Tile
         
-        public init(at space: Space) {
-            self.space = space
+        public init(at position: CGPoint, tile: Tile) {
+            self.position = position
+            self.tile = tile
         }
     }
 }

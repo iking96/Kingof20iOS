@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct TileView: View {
-    var tile: Tile
-    var onSelection: () -> Void
+    @EnvironmentObject var store: GameStore
 
+    var tile: Tile
+                     
     var body: some View {
-        Button(action: onSelection) {
-            tile.view()
-        }
+        tile.view().draggable(onDropped: onDropPiece)
+    }
+    
+    func onDropPiece(position: CGPoint) -> Void {
+        store.send(RackAction.Place(at: position, tile: tile))
     }
 }
 
 struct TileView_Previews: PreviewProvider {
     static var previews: some View {
-        TileView(tile: Tile(value: TileValue.over), onSelection: { })
+        TileView(tile: Tile(value: TileValue.over))
     }
 }
 

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct SpaceView: View {
+    @EnvironmentObject var store: GameStore
+
     var space: Space
     
     var body: some View {
         space
             .backgroundColor
+            .dropReceiver(for: store.state.board.boardMatrix[space.row][space.column], model: store)
             .overlay(
                 space
                     .textView

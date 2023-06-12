@@ -23,8 +23,8 @@ enum TileValue: Int, Codable {
     case over
 }
 
-struct Tile : Identifiable, Equatable, Codable {
-    var id = UUID()
+public struct Tile : Identifiable, Equatable, Codable {
+    public var id = UUID()
     var value : TileValue
     
     var face: String {
