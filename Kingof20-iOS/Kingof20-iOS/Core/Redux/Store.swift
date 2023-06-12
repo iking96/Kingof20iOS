@@ -14,7 +14,8 @@ internal func abstractMethod(file: StaticString = #file, line: UInt = #line) -> 
 }
 
 public final class Store<R: Reducer>: ObservableObject {
-    @Published public private(set) var state: R.State
+    // @Published public private(set) var state: R.State
+    @Published public var state: R.State
 
     private let reducer: R
 

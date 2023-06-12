@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct RackView: View {
-    @EnvironmentObject var store: GameStore
-
     var tiles: [Tile]
 
     var body: some View {
         HStack {
             ForEach(tiles) { tile in
-                TileView(tile: tile) {
-                    store.send(RackAction.Place(at: Space(row: 1, column: 1, tile: tile)))
-                }
+                TileView(tile: tile)
             }
         }
     }

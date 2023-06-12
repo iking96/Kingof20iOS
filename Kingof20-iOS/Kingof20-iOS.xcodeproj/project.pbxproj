@@ -17,6 +17,11 @@
 		7B4624792A209F0A00323D90 /* GameAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4624782A209F0A00323D90 /* GameAction.swift */; };
 		7B46247B2A211CFA00323D90 /* RackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B46247A2A211CFA00323D90 /* RackAction.swift */; };
 		7B46247D2A21AE5300323D90 /* StoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B46247C2A21AE5300323D90 /* StoreProvider.swift */; };
+		7B4624802A27162F00323D90 /* DragableViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B46247F2A27162F00323D90 /* DragableViewModifier.swift */; };
+		7B4624842A28602D00323D90 /* DropAreaViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4624832A28602D00323D90 /* DropAreaViewModifier.swift */; };
+		7B4624862A28609E00323D90 /* DropReceivableObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4624852A28609E00323D90 /* DropReceivableObservableObject.swift */; };
+		7B4624882A2860C300323D90 /* DropReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4624872A2860C300323D90 /* DropReceiver.swift */; };
+		7B46248B2A2AB09700323D90 /* ArraySelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B46248A2A2AB09700323D90 /* ArraySelect.swift */; };
 		7B909C7229370B640073C898 /* Kingof20_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B909C7129370B640073C898 /* Kingof20_iOSApp.swift */; };
 		7B909C7429370B640073C898 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B909C7329370B640073C898 /* GameView.swift */; };
 		7B909C7629370B650073C898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B909C7529370B650073C898 /* Assets.xcassets */; };
@@ -61,6 +66,11 @@
 		7B4624782A209F0A00323D90 /* GameAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAction.swift; sourceTree = "<group>"; };
 		7B46247A2A211CFA00323D90 /* RackAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackAction.swift; sourceTree = "<group>"; };
 		7B46247C2A21AE5300323D90 /* StoreProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProvider.swift; sourceTree = "<group>"; };
+		7B46247F2A27162F00323D90 /* DragableViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableViewModifier.swift; sourceTree = "<group>"; };
+		7B4624832A28602D00323D90 /* DropAreaViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropAreaViewModifier.swift; sourceTree = "<group>"; };
+		7B4624852A28609E00323D90 /* DropReceivableObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropReceivableObservableObject.swift; sourceTree = "<group>"; };
+		7B4624872A2860C300323D90 /* DropReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropReceiver.swift; sourceTree = "<group>"; };
+		7B46248A2A2AB09700323D90 /* ArraySelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySelect.swift; sourceTree = "<group>"; };
 		7B909C6E29370B640073C898 /* Kingof20-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kingof20-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B909C7129370B640073C898 /* Kingof20_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingof20_iOSApp.swift; sourceTree = "<group>"; };
 		7B909C7329370B640073C898 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -145,6 +155,8 @@
 		7B4624712A209E4200323D90 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7B4624892A2AB07E00323D90 /* Utils */,
+				7B46247E2A27160400323D90 /* DragAndDrop */,
 				7B4624752A209EB500323D90 /* State */,
 				7B4624722A209E4B00323D90 /* Reducers */,
 				7B46246C2A208F9D00323D90 /* Actions */,
@@ -167,6 +179,25 @@
 				7B4624762A209EC500323D90 /* GameState.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		7B46247E2A27160400323D90 /* DragAndDrop */ = {
+			isa = PBXGroup;
+			children = (
+				7B46247F2A27162F00323D90 /* DragableViewModifier.swift */,
+				7B4624832A28602D00323D90 /* DropAreaViewModifier.swift */,
+				7B4624852A28609E00323D90 /* DropReceivableObservableObject.swift */,
+				7B4624872A2860C300323D90 /* DropReceiver.swift */,
+			);
+			path = DragAndDrop;
+			sourceTree = "<group>";
+		};
+		7B4624892A2AB07E00323D90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7B46248A2A2AB09700323D90 /* ArraySelect.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7B909C6529370B640073C898 = {
@@ -393,6 +424,8 @@
 				7B4624742A209E5800323D90 /* GameReducer.swift in Sources */,
 				7BE94F4A293F04BD00127449 /* SpaceView.swift in Sources */,
 				7B4624682A1D76D200323D90 /* RackView.swift in Sources */,
+				7B46248B2A2AB09700323D90 /* ArraySelect.swift in Sources */,
+				7B4624842A28602D00323D90 /* DropAreaViewModifier.swift in Sources */,
 				7BE94F44293878F500127449 /* Board.swift in Sources */,
 				7B462462294721D800323D90 /* PreviewHelpers.swift in Sources */,
 				7B909C7429370B640073C898 /* GameView.swift in Sources */,
@@ -401,13 +434,16 @@
 				7BE94F4D293F067600127449 /* RowView.swift in Sources */,
 				7B4624772A209EC500323D90 /* GameState.swift in Sources */,
 				7BE94F4029373B3600127449 /* Tile.swift in Sources */,
+				7B4624882A2860C300323D90 /* DropReceiver.swift in Sources */,
 				7B909C7229370B640073C898 /* Kingof20_iOSApp.swift in Sources */,
 				7B4624702A20954700323D90 /* Store.swift in Sources */,
 				7B46246529497A6C00323D90 /* GameConstants.swift in Sources */,
+				7B4624802A27162F00323D90 /* DragableViewModifier.swift in Sources */,
 				7BE94F4229373CB200127449 /* TileView.swift in Sources */,
 				7B46246B2A20514D00323D90 /* Reducer.swift in Sources */,
 				7BE94F3D2937387A00127449 /* BoardView.swift in Sources */,
 				7BE94F4F293F102F00127449 /* Space.swift in Sources */,
+				7B4624862A28609E00323D90 /* DropReceivableObservableObject.swift in Sources */,
 				7B46247D2A21AE5300323D90 /* StoreProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
